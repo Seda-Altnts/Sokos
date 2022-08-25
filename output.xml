@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.9.5 on win32)" generated="20220824 15:35:26.528" rpa="false" schemaversion="2">
+<suite id="s1" name="VerifyLandingPage" source="C:\Users\Seda\PycharmProjects\pythonProject\Sokos\TestCases\VerifyLandingPage.robot">
+<kw name="Open and Setup Enviroment" library="SetUp&amp;TearDown" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220824 15:35:26.997" level="INFO">Opening browser 'Chrome' to base url 'https://www.sokos.fi/fi/sokos'.</msg>
+<status status="PASS" starttime="20220824 15:35:26.997" endtime="20220824 15:35:34.506"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220824 15:35:34.506" endtime="20220824 15:35:35.592"/>
+</kw>
+<kw name="Accept Cookies" library="SetUp&amp;TearDown">
+<kw name="Click Element When Visible" library="Essential">
+<arg>${AcceptCookies}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${argument_location}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220824 15:35:35.598" level="INFO">Clicking element '//*[@class='light-button accept']'.</msg>
+<status status="PASS" starttime="20220824 15:35:35.596" endtime="20220824 15:35:37.109"/>
+</kw>
+<status status="PASS" starttime="20220824 15:35:35.595" endtime="20220824 15:35:37.109"/>
+</kw>
+<status status="PASS" starttime="20220824 15:35:35.594" endtime="20220824 15:35:37.109"/>
+</kw>
+<status status="PASS" starttime="20220824 15:35:26.997" endtime="20220824 15:35:37.109"/>
+</kw>
+<test id="s1-t1" name="Landing Page">
+<kw name="Verify Handlebanner" library="MainScenarios">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${HandleBannerImage}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20220824 15:35:37.336" level="INFO">Element '//*[@class='container handledbanner']/*/*' is displayed.</msg>
+<status status="PASS" starttime="20220824 15:35:37.112" endtime="20220824 15:35:37.337"/>
+</kw>
+<status status="PASS" starttime="20220824 15:35:37.111" endtime="20220824 15:35:37.337"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220824 15:35:42.344" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220824 15:35:37.338" endtime="20220824 15:35:42.344"/>
+</kw>
+<status status="PASS" starttime="20220824 15:35:37.110" endtime="20220824 15:35:42.344"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220824 15:35:42.344" endtime="20220824 15:35:44.828"/>
+</kw>
+<status status="PASS" starttime="20220824 15:35:26.528" endtime="20220824 15:35:44.828"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="VerifyLandingPage">VerifyLandingPage</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
