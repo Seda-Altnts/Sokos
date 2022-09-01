@@ -65,12 +65,13 @@ Verify Brand Tiles
 #Kosmetiikka Landing Page
 Go to Catagory Landing Page
     [Arguments]    ${CatagoryPage}
-    Click Element When Visible  //*[@id='departmentsMenu1']/descendant::*[contains(text(),'${CatagoryPage}')]
+    Click Element When Visible  //*[@id='departmentsMenu1']/descendant::*[contains(text(),'${CatagoryPage}')]/..
+    wait until page contains element    //h1
     ${h1_header}    get text    //h1
     should be equal as strings    ${h1_header}     ${CatagoryPage}
 
 Verify Content Slider
-    element should be visible    ${KosmatiikkaHandleBanner}    ${wait_time_out_long}
+    element should be visible    ${CarouselInner}    ${wait_time_out_long}
 
 Verify Sub-Catagories
     ${CountSubCatagory}    get element count    ${SubCatagories}

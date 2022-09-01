@@ -15,7 +15,7 @@ BrandTiles="//*[@id='wcmContentWidget_3_1552_20951']/div[4]/div/div/p"
 
 
 #KosmetiikkaPageLocatres
-KosmatiikkaHandleBanner="//*[@class='carousel slide']"
+CarouselInner="//*[@class='carousel-inner']"
 SubCatagories="//*[@class='col-md-4 col-sm-4 column col-6']"
 BrandContent="//*[@class='col-md-3 col-sm-3 column col-6']"
 ProductListGrid="//*[@class='grid_mode grid']"
