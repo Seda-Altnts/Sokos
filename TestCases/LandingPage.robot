@@ -18,10 +18,14 @@ Landing Page
     Verify Bottom Three Tile Grid
     Verify S_Etuja Banner
     Verify SelaaKuvastoa Banner
-    Verify Suggettion Slider
     Verify Catagory Tiles
     Verify Brand Tiles
+    Verify Product Suggestion Sliders
+    Verify Current Product List Container
 
+
+
+#robot    -d TestResults/LandingPage TestCases/LandingPage.robot
 
 
 

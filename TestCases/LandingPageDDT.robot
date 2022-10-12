@@ -18,10 +18,16 @@ Menu Landing Page
     [Arguments]    ${category}
     [Tags]     regression
     Go to Catagory Landing Page     ${category}
-    Verify Content Slider
-    Verify Sub-Catagories
-    Verify Brands Content
+    Verify Handlebanner
+    Verify Six Tile Grid
+    Verify Inspiroidu Link
+    Verify Bottom Three Tile Grid
+    Verify S_Etuja Banner
+    Verify SelaaKuvastoa Banner
+    Verify Suggettion Slider
+    Verify Catagory Tiles
+    Verify Brand Tiles
     Verify Product Suggestion Sliders
     Verify Current Product List Container
 
-# pabot --testlevelsplit --pabotlib  --processes 5 --outputdir Results TestCases/DDT.robot
+#pabot --testlevelsplit --pabLandingPageDDT.robototlib  --processes 5 --outputdir TestResults/LandingPageDDT  TestCases/LandingPageDDT.robot
